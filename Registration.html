@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title> Login Form </title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(Images/ab.jpg);
+            background-clip: initial;
+            background-origin: initial;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover !important;
+            position: relative;
+            z-index: 0;
+            background-attachment: fixed;
+            background-size: cover;
+
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+        .login-box {
+            width: 480px;
+            height: 550px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: calc(50% - 50px);
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .login-box p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .login-box input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .login-box input[type="text"],
+        input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .login-box input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #1c8adb;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .login-box input[type="submit"]:hover {
+            cursor: pointer;
+            background: rgba(252, 177, 3);
+            color: rgb(46, 43, 43);
+        }
+
+        .login-box a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .login-box a:hover {
+            color: rgba(252, 177, 3);
+        }
+
+        .aba {
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(59, 54, 54);
+            padding-top: 20 20 20 20;
+            margin-top: 30 30 30 30;
+            margin-left: 40px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="index.html" class="aba"><u>Back</u></a>
+    <div class="login-box">
+
+        <img src="Images\avatar.png" class="avatar">
+        <h1>Sign Up</h1>
+        <form>
+            <p>First Name</p>
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <p>Last Name</p>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Email" required>
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <input type="submit" name="Sign Up" value="signup">
+
+            <p>If you already have Account then <a href="Login.html"><u>Login</us></a></p>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

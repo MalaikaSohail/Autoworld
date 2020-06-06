@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/*--------------------navbar--------------------*/
+#nav-bar
+{
+ position: sticky;
+ top: 0;
+ z-index: 10;
+}
+.navbar-brand img
+{
+    height: 50px;
+    padding-left:40px;
+}
+#nav-bar
+{
+    width: 100%;
+    height: 70%;
+    background-color: #626262;
+}
+
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar a
+{
+    -webkit-transition: all 0.5s ease-out 0s; -moz-transition: all 0.5s ease-out 0s; -ms-transition: all 0.5s ease-out 0s; -o-transition: all 0.5s ease-out 0s;
+     transition: all 0.5s ease-out 0s;
+
+}
+#nav-bar a:focus 
+{
+     text-decoration: none !important; }
+#nav-bar a:focus, a:hover
+{
+    color: rgba(252, 177, 3)!important;
+}
+.navbar-nav
+{
+    color: white;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link
+{
+    color: white!important;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; font-weight: normal;
+}
+/*------------------Slider---------------*/
+#slider
+{
+    width: 100%;
+}
+/*------------------Intro---------------*/
+#intro
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+    text-align: center;
+}
+
+h2, h1{
+    
+    font-size: 18px; font-style: normal; font-weight: 600; line-height: 24px;
+}
+h2, h1{
+    font-size: 35px; font-style: normal; font-weight: 600; line-height: 35px;
+}
+
+
+.section-title { margin-bottom: 60px; text-align: center; }
+
+.section-title h2 { font-size: 36px; text-transform: uppercase; font-weight: 600; }
+.section-title span { margin-bottom: 10px; display: block; }
+.section-title .separator:after { width: 100px; display: block; margin: auto; content: ""; height: 1px; 
+    background: rgba(252, 177, 3); bottom: 0px; left: 50%; transition: width .8s ease, background-color .8s ease; -webkit-transition: width .8s ease, background-color .8s ease; -o-transition: width .8s ease, background-color .8s ease; -ms-transition: width .8s ease, background-color .8s ease; -moz-transition: width .8s ease, background-color .8s ease; }
+.section-title .separator:before { content: ''; display: block; margin: auto; left: 50%; height: 1px; width: 50px; bottom: -15px; 
+    background: rgba(252, 177, 3); transition: width .8s ease, background-color .8s ease; -webkit-transition: width .8s ease, background-color .8s ease; -o-transition: width .8s ease, background-color .8s ease; -ms-transition: width .8s ease, background-color .8s ease; -moz-transition: width .8s ease, background-color .8s ease; margin-bottom: 6px; }
+section:hover .section-title .separator:before { width: 100px; left: 0; }
+section:hover .section-title .separator:after { width: 50px; left: 0; }
+
+/*------------------Available cars--------------------*/
+#carslider
+{
+    background:linear-gradient(rgba(179, 178, 178, 0.8),rgba(165, 156, 156, 0.8)), url(Images/08.png);
+     background-clip: initial;
+       background-origin: initial;
+        background-position: center center;
+         background-repeat: no-repeat;
+          background-size: cover !important;
+           position: relative;
+            z-index: 0;
+             background-attachment: fixed; 
+ 
+color: #555!important;
+ padding-top: 30px;
+ padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+/*-----------footer--------------*/
+
+footer
+{
+  background-color: rgb(107, 99, 99);
+  width:100% ;
+  height: 50% ;
+  text-align:right ;
+}
+
+/*------------------------------*/

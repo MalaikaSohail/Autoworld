@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /*--------------------navbar--------------------*/
+    #nav-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      padding-left: 40px;
+    }
+
+    #nav-bar {
+      width: 100%;
+      height: 70%;
+      background-color: #626262;
+    }
+
+    .navbar-nav li {
+      padding: 0 10px;
+    }
+
+    .navbar-nav li a {
+      float: right;
+      text-align: left;
+    }
+
+    #nav-bar a {
+      -webkit-transition: all 0.5s ease-out 0s;
+      -moz-transition: all 0.5s ease-out 0s;
+      -ms-transition: all 0.5s ease-out 0s;
+      -o-transition: all 0.5s ease-out 0s;
+      transition: all 0.5s ease-out 0s;
+
+    }
+
+    #nav-bar a:focus {
+      text-decoration: none !important;
+    }
+
+    #nav-bar a:focus,
+    a:hover {
+      color: rgba(252, 177, 3) !important;
+    }
+
+    .navbar-nav {
+      color: white;
+    }
+
+    .navbar-toggler {
+      border: none !important;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 600;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+    }
+
+    /*----------------------------*/
+
+    .contact-2 .feature-box-3 {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .contact-2 .opening-hours {
+      margin-top: 50px;
+      display: block;
+    }
+
+    .contact-2 .gray-form {
+      padding-right: 50px;
+    }
+
+    .contact-2 .gray-form p {
+      margin-bottom: 30px;
+    }
+
+    .contact-2 .gray-form a.button.red {
+      display: block;
+    }
+
+    .details-form.contact-2 .gray-form a.button.red {
+      display: block;
+    }
+
+    .details-form.contact-2 .gray-form {
+      padding-right: 0px;
+    }
+
+    .page-section-ptb {
+      padding: 80px 0;
+    }
+
+    .white-bg {
+      background: #ffffff;
+    }
+
+
+    h2,
+    h1 {
+
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    h2,
+    h1 {
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 35px;
+    }
+
+
+    .section-title {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .section-title span {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .section-title .separator:after {
+      width: 100px;
+      display: block;
+      margin: auto;
+      content: "";
+      height: 1px;
+      background: rgba(252, 177, 3);
+      bottom: 0px;
+      left: 50%;
+      transition: width .8s ease, background-color .8s ease;
+      -webkit-transition: width .8s ease, background-color .8s ease;
+      -o-transition: width .8s ease, background-color .8s ease;
+      -ms-transition: width .8s ease, background-color .8s ease;
+      -moz-transition: width .8s ease, background-color .8s ease;
+    }
+
+    .section-title .separator:before {
+      content: '';
+      display: block;
+      margin: auto;
+      left: 50%;
+      height: 1px;
+      width: 50px;
+      bottom: -15px;
+      background: rgba(252, 177, 3);
+      transition: width .8s ease, background-color .8s ease;
+      -webkit-transition: width .8s ease, background-color .8s ease;
+      -o-transition: width .8s ease, background-color .8s ease;
+      -ms-transition: width .8s ease, background-color .8s ease;
+      -moz-transition: width .8s ease, background-color .8s ease;
+      margin-bottom: 6px;
+    }
+
+    section:hover .section-title .separator:before {
+      width: 100px;
+      left: 0;
+    }
+
+    section:hover .section-title .separator:after {
+      width: 50px;
+      left: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      color: #534e4e;
+      margin-top: 0px;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    .gray-form .button.red {
+      display: block;
+      text-align: center;
+      border: 0px;
+      width: 100%;
+    }
+
+    .gray-form .select-styled {
+      background: #f6f6f6;
+      border-color: #f6f6f6;
+      line-height: 20px;
+    }
+
+    /*-------------------------*/
+
+    footer {
+      background-color: rgb(107, 99, 99);
+      width: 100%;
+      height: 50%;
+      text-align: right;
+    }
+
+    /*------------------------------*/
+  </style>
+
+</head>
+
+<body>
+
+  <!------------Navigation Bar------------------>
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#"><img src="Images\logo-light.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a> &ensp;
+          &ensp; &ensp;
+          <a class="nav-item nav-link" href="Aboutus.html">About Us</a>
+          &ensp; &ensp; &ensp;
+          <a class="nav-item nav-link" href="Contactus.html">Contact Us</a> &ensp; &ensp; &ensp;
+          <a class="nav-item nav-link" href="Registration.html">Signup</a> &ensp; &ensp; &ensp;
+          <a class="nav-item nav-link" href="Login.html">Login</a> &ensp; &ensp; &ensp; &ensp; &ensp;
+
+
+
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!---------------------Image------------------------->
+
+  <div id="slider">
+    <div id="headerSlider" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="Images\c3.jpg"
+            style="width: 100%; height: 30%; background-attachment: fixed;">
+        </div>
+
+
+      </div>
+    </div>
+
+    <!------------------------------------------------------------->
+
+
+
+
+    <section class="contact-2 page-section-ptb white-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10">
+            <div class="section-title">
+
+              <h2>Contact US</h2>
+              <div class="separator"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="gray-form row">
+              <div class="col-lg-12 col-md-12">
+                <div id="formmessage">Success/Error Message Goes Here</div>
+                <form class="form-horizontal" id="contactform" role="form" method="post" action="">
+                  <h5>Auto World is transforming the way used-cars are traded, by bringing international best practices
+                    to Pakistan.</h5>
+                  <br>
+                  <p style="font: grey;"> Auto World is also providing a first of its kind online auction platform for
+                    used-cars in Pakistan, giving our private network of buyers the fastest way to find the perfect car
+                    that fits their buyers’ needs.Our private network of buyers can choose from an extensive variety of
+                    CarFirst certified used-cars from across the country. Auto World ensures providing the safest
+                    marketplace for their partners.</p>
+                  <div class="contact-form">
+                    <div class="form-group">
+                      <input id="name" type="text" placeholder="Name" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" placeholder="Email" class="form-control" name="email">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" placeholder="Phone" class="form-control" name="phone">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control input-message" placeholder="Leave a comment" rows="7"
+                        name="message"></textarea>
+                    </div>
+                    <input type="hidden" name="action" value="sendEmail" />
+                    <button id="submit" name="submit" type="submit" value="Send"
+                      class="button red btn btn-primary btn-md btn-rounded"> Contact </button>
+                  </div>
+                </form>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <!----------------------Footer-------------------------->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3
+            style="text-align: left; color: rgb(243, 239, 222); margin-top: 10%; font-family: 'Roboto', sans-serif; font-weight: normal; ">
+            Auto World</h3>
+          <br>
+          <p style="text-align: left; color: rgb(189, 183, 183);">AutoWorld is an online direct car retailer. We offer
+            great prices because we own every car we sell—low-mileage, reconditioned vehicles. With autoWorld, you can
+            browse, finance, and purchase your next car online</p>
+
+          <i class="fa fa-facebook" aria-hidden="true"
+            style="color: rgb(204, 207, 207); font-size: 18px; text-align: left; "></i>
+          &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;
+          <i class="fa fa-twitter" aria-hidden="true"
+            style="color: rgb(204, 207, 207); font-size: 18px; text-align: left; "></i>&emsp; &emsp;&emsp;&emsp;
+          <i class="fa fa-google-plus" aria-hidden="true"
+            style="color: rgb(204, 207, 207); font-size: 18px; text-align: left; "></i>&emsp; &emsp;&emsp;&emsp;
+          <i class="fa fa-linkedin" aria-hidden="true"
+            style="color: rgb(204, 207, 207); font-size: 18px; text-align: left; "></i>&emsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <br><br> <br>
+
+          <p style="color: white;">@Copyright by MMS.</p>
+
+
+        </div>
+
+        <div class="col-md-6 mylinks">
+          <h4
+            style="color: white; text-align: center; padding-top: 10%; font-family: 'Roboto', sans-serif; font-weight: normal;">
+            Quick Links</h4>
+          <br>
+          <ul style="list-style: none; font: rgb(204, 207, 207); text-align:  left; padding-left: 35%; ">
+            <li><a href="Aboutus.html">> About Us</a></li>
+            <li><a href="Contactus.html">> Contact Us</a></li>
+            <li><a href="Login.html">> Login</a></li>
+            <li><a href="Registration.html">> Sign Up</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!----------------------------------------------------->
+
+
+</body>
+
+</html>
